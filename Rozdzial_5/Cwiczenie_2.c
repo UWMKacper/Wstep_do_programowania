@@ -1,37 +1,25 @@
-/* Cw_1.c -- Program pobiera od uzytkownika minuty i wyswietla je w postaci
-godziny i minuty. Do obliczen wykorzystano petle while i stala symboliczba dla liczby 60. */
+/* Cwiczenie_2.c -- Program pobiera od uzytkownika liczbe calkowita, a nastepnie wyswietla wszystkie
+wartosci z zakresu <liczba, liczba + 10>. */
 
 #include<stdio.h>
-int pobierz_wartosc(void);
 
 int main(void)
 {
-    // Definiowanie stalych i zmiennych
-    int const MIN_W_H = 60;
-    int minuty, godziny, reszta;
+    // Definiowanie zmiennych
+    int liczba, zakres;
 
-    // Pobranie danych od uzytkownika
-    minuty = pobierz_wartosc();
+    // Pobranie wartosci od uzytkownika
+    printf("Podaj liczbe calkowita: ");
+    scanf("%d", &liczba);
 
-    while ( pobierz_wartosc() > 0)
+    zakres = liczba + 11;
+
+    // Wypisanie wszystkich liczb z zalozonego zakresu
+    while (liczba < zakres)
     {
-        godziny = minuty / MIN_W_H;
-        reszta = minuty % MIN_W_H;
-
-        printf("%d minut to %d godzin i %d minut", minuty, godziny, reszta);
-
-        minuty = pobierz_wartosc();
+        printf("%d\n", liczba);
+        liczba += 1;
     }
 
     return 0;
-}
-
-int pobierz_wartosc(void)
-{
-    int min;
-
-    printf("\nPodaj liczbe minut do przeliczenia: ");
-    scanf("%d", &min);
-
-    return min;
 }
