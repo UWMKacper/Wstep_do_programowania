@@ -1,4 +1,4 @@
-/* Cw_1.c - Program odczytuje dane wejsciowe az do napotkania znaku '#',
+/* Cwiczenie_1.c - Program odczytuje dane wejsciowe az do napotkania znaku '#',
 a nastêpnie wyswietla informacje o liczbie odczytanych odstepow,
 znakow nowej linii oraz wszystkich innych znakow. */
 

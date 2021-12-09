@@ -1,4 +1,4 @@
-/* Cw_2.c -- Program odczytuje dane az do napotkania znaku '#',
+/* Cwiczenie_2.c -- Program odczytuje dane az do napotkania znaku '#',
 a nastepnie wyswietla kazdy znak wraz z jego kodem dziesietnym ASCII.
 W jednym okienku powinno znajdowaæ siê 8 znaków. */
 
